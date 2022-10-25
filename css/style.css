@@ -41,6 +41,13 @@ body {
   margin-left: -60px;
   border: 6px solid #863e03;
   border-radius: 10%;
+  transition: 0.5s;
+  cursor: zoom-in;
+}
+.header__info-img:hover {
+  width: 250px;
+  height: 400px;
+  margin-left: -125px;
 }
 .header__info-title {
   text-align: center;

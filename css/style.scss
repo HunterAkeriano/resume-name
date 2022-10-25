@@ -43,6 +43,13 @@ body{
             margin-left: -60px;
             border: 6px solid #863e03;
             border-radius: 10%;
+            transition: 0.5s;
+            cursor: zoom-in;
+        }
+        &-img:hover{
+            width: 250px;
+            height: 400px;
+            margin-left: -125px;
         }
         &-title{
             text-align: center;
@@ -244,6 +251,8 @@ body{
         text-align: center;
     }
 }
+
+
 .slide2{
     transition: 0.3s;
     a{
