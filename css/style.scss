@@ -1,0 +1,316 @@
+// настройки
+// ***********************
+@import 'variables';
+// обнуление
+body, h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+*, 
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+// шрифты
+body{
+    font-family: $orbition;
+}
+// ***********************
+.pages{
+    margin: 100px 20px 0;
+}
+
+
+.header{
+    background-color: rgb(6, 6, 102);
+    position: relative;
+    padding-bottom: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    &__info{
+       padding-top: 50px;
+       
+
+        &-img{
+            position: absolute;
+            height: 150px;
+            width: 120px;
+            top: -100px;
+            left: 50%;
+            margin-left: -60px;
+            border: 6px solid #863e03;
+            border-radius: 10%;
+        }
+        &-title{
+            text-align: center;
+            color: $clrs;
+            font-family: $orbition;
+            font-size: 40px;
+        }
+        &-subtitle{
+            text-align: center;
+            margin-top: 5px;
+            color: $clrs;
+            span{
+                color: rgb(9, 192, 85);
+                font-weight: 700;
+            }
+            
+        }
+    }
+}
+
+
+.main{
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.info{
+    width: 30%;
+    .end{
+        border-bottom: 1px solid #ccc ;
+    }
+    &__text{
+        padding: 20px;
+        margin-top: 30px;
+        &-titles{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        &-ul{
+            padding: 0;
+            margin: 0;
+            margin-left: 20px;
+            &-li{
+                margin-top: 10px;
+                padding-left: 0;
+                color: red;
+                .span-text{
+                    color: black
+                }
+            }
+        }
+    }
+
+}
+
+
+
+.works{
+    width: 70%;
+    &__content{
+        margin-top: 50px;
+        &-title{
+            text-align: center;
+        }
+        &-repositories{
+            margin-top: 100px;
+            padding: 0 50px;
+            border: 1px solid #ccc;
+            a{
+                display: inline;
+                font-weight: 700;
+                color: black;
+                transition: 0.3s;
+            }
+            a:hover{
+                color: blue;
+            }
+            &-title{
+                text-align: center;
+            }
+
+        }
+    }
+}
+
+
+.reviews{
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px 0px;
+    &__text{
+        &-title{
+            text-align: center;
+            font-weight: 700;
+            font-size: 30px;
+        }
+        &-card{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            .card1{
+                margin: 0 auto;
+            }
+            .card2{
+                margin: 0 auto;
+            }
+            .card3{
+                width: 100%;
+                margin: 0 auto;
+            }
+            .card{
+                display: flex;
+                width: 45%;
+                background-color: rgb(25, 16, 73);
+                border-radius: 20px;
+                padding: 20px 10px;
+                margin-top: 20px;
+                img{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    margin-top: 8%;
+                }
+               .card-text{
+                margin-left: 20px;
+                .card-title,
+                .card-subtitle{
+                  color: $clrs
+                }
+                .card-subtitle{
+                    margin: 10px 0px;
+                    font-weight: 100;
+                }
+                .card-info-text{
+                    color: $clrs;
+                    font-weight: 400;
+                    line-height: 25px;
+                }
+               }
+                
+            }
+        }
+    }
+}
+
+.footer{
+    max-width: 1400px;
+    margin: 20px auto 0;
+    &-title{
+        text-align: center;
+    }
+    &__info{
+       text-align: center;
+        
+        &-numbers{
+            font-weight: 700;
+            margin-top: 20px;
+            a{
+                display: inline;
+            }
+        }
+        &-adress{
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+    }
+}
+
+
+
+
+
+
+// slider
+.swiper{
+   
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+
+}
+.slide1{
+    transition: 0.3s;
+    a{
+        width: inherit;
+        background-color: aliceblue;
+    }
+    img{
+        width: 100%
+    }
+    .slide-text{
+        color:black;
+        margin-top: 20px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+.slide2{
+    transition: 0.3s;
+    a{
+        width: inherit;
+        background-color: aliceblue;
+    }
+    img{
+        width: 100%
+    }
+    .slide-text{
+        color:black;
+        margin-top: 20px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+.slide1:hover{
+    outline: 3px solid blue;
+}
+.slide2:hover{
+    outline: 3px solid blue;
+}
+.swiper{
+    position: relative;
+}
+.swiper-button-prev,
+.swiper-button-next{
+   top: 320px;
+}
+.swiper-button-prev::after{
+    content: '\2190';
+    color: black;
+    font-weight: 700;
+    opacity: 0.7;
+   
+}
+.swiper-button-next::after{
+    content: '\2192';
+    color: black;
+    font-weight: 700;
+    opacity: 0.7;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover{
+    opacity: 1;
+}
+
+
+
+.btn-span{
+    position: absolute;
+    left: 40px;
+}
+
+.btn-span,
+.btn{
+    color: black;
+    position: absolute;
+    top: 17px;
+    opacity: 0.6;
+    transition: 0.3s;
+    font-weight: 700;
+}
+.btn{
+    right: 40px;
+}
+.btn:hover,
+.btn-span:hover{
+    opacity: 1;
+}

@@ -1,24 +1,137 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Фермеры 2019</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media/media.css">
+    <title>Резюме</title>
 </head>
 <body>
-  <section class="convert">
-    <div>
-    <select name="converter" id="select_">
-            <option value="0">Выбери какой то результат</option>
-            <option value="1">Доллар</option>
-            <option   value="2">Евро</option>
-        </select>
+    
+    <div class="pages">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__info">
+                    <img  class="header__info-img" src="images/avatar.png" alt="">
+                    <h1 class="header__info-title">Dmitriy Gulak</h1>
+                    <p class="header__info-subtitle"><span> junior</span> Front-end developer</p>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="info">
+                <div class="info__text">
+                <h2 class="info__text-titles">Soft Skills</h2>
+                <ul class="info__text-ul">
+                    <li class="info__text-ul-li"><span class="span-text">TeamWork</span></li>
+                    <li class="info__text-ul-li"><span class="span-text">GitHub</span></li>
+                    <li class="info__text-ul-li"><span class="span-text">BEM</span></li>
+                </ul>
+                </div>
+                <div class="info__text end">
+                    <h2 class="info__text-titles">Tech Skills</h2>
+                    <ul class="info__text-ul">
+                        <li class="info__text-ul-li"><span class="span-text">HTML5</span></li>
+                        <li class="info__text-ul-li"><span class="span-text">CSS</span></li>
+                        <li class="info__text-ul-li"><span class="span-text">SCSS</span></li>
+                        <li class="info__text-ul-li"><span class="span-text">JS</span></li>
+                        <li class="info__text-ul-li"><span class="span-text">SwiperJS</span></li>
+                        <li class="info__text-ul-li"><span class="span-text">VUE</span></li>
+                    </ul>
+                    </div>
+
+                    <div class="info__text ">
+                        <h2 class="info__text-titles">Expectation for salary</h2>
+                        <ul class="info__text-ul">
+                            <li class="info__text-ul-li"><span class="span-text">Internship period: 250$</span></li>
+                            <li class="info__text-ul-li"><span class="span-text">Permanent job: 800$</span></li>
+                        </ul>
+                        </div>
+            </section>
+            <section class="works">
+                <div class="works__content">
+                    <h2 class="works__content-title">My works</h2>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1">
+                                <a href="https://hunterakeriano.github.io/muzei/" target="_blank">
+                                    <img src="images/work1.png" alt="">
+                                    <p class="slide-text">
+                                         THEATER Лесі Українки OF UKRAINE</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide2">
+                                <a href="https://hunterakeriano.github.io/poretn2/" target="_blank">
+                                    <img src="images/work2.png" alt="">
+                                    <p class="slide-text">
+                                        Porten UKRAINE</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"><span class="btn-span">Previous</span></div>
+                        <div class="swiper-button-next"><span class="btn">Next</span></div>
+                    </div>
+
+
+                    <!-- <div class="works__content-repositories">
+                        <h3 class="works__content-repositories-title">My additional work</h3>
+                        <p class=""> <a href="">Copy Meta</a> ....................................................................................................</p>
+                    </div> -->
+                </div>
+            </section>
+        </main>
+
+        <div class="reviews">
+            <div class="reviews__text">
+                <div class="reviews__text">
+                    <h3 class="reviews__text-title"> People's reviews about me</h3>
+                    <div class="reviews__text-card">
+                        <div class="card card1">
+                            <img src="images/hr.jpg" alt="" class="card-img">
+                            <div class="card-text">
+                            <h4 class="card-title">Kristina Bocharova</h4>
+                            <h6 class="card-subtitle">HR - 'Avada Media'</h6>
+                            <p class="card-info-text">Дмитро прийшов до нас на стажування, і не вмів навіть верстати прості блоки, але він був сильно замотивований, що бачили наші ментори, на кожному зідзвоні в четверг, Дмитро показував все нові результати та успіхи. Вже через 10 днів після початку стажування, Дмитро закрив свій перший сайт: Porten Ukraine. Якщо Дмитро буде рухатись так і далі, його робоче місце буде його чекати</p>
+                        </div>                       
+                     </div>
+                     <div class="card card2">
+                        <img src="images/inde.jpg" alt="" class="card-img">
+                        <div class="card-text">
+                        <h4 class="card-title">Mamut Rahal</h4>
+                        <h6 class="card-subtitle">RAJ Studio Interns</h6>
+                        <p class="card-info-text">Дмитрий просто захотел пройти бесплатный марафон который шёл месяц, в рамках беслпатного обучения интернетов-студентов из Украины, я как личный наставник могу сказать только одно: Дмитрий не лучший ученик, но и не пасёт задних, его выполнением заданий я доволен, на этом всё.</p>
+                    </div>                       
+                 </div>
+                 <div class="card card3">
+                    <img src="images/hr.jpg" alt="" class="card-img">
+                    <div class="card-text">
+                    <h4 class="card-title">Oleg Ivanchikov</h4>
+                    <h6 class="card-subtitle">Студент з напрямку RAJ Studio Interns</h6>
+                    <p class="card-info-text">Мой знакомый(Дима), просто где-то нашёл бесплатный марафон и предложил пройти мне, я все равно дома сидел, и решил вместе с ним пройти этот марафон, так повезло что я как и он попали на один проект, делали много косяков, но всё таки смогли его закрыть.</p>
+                </div>      
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-            <input  id = "reset">
-        <input  id="inp">
-    </section>
-    <script src="script.js"></script>
+
+
+    <footer class="footer">
+        <h2 class="footer-title">Contact me</h2>
+        <div class="footer__info">
+            <p class="footer__info-numbers">Phone number: <a href="tel:+38095656">+380да это мой номер</a></p>
+            <p class="footer__info-adress">Address of residence: Bratskoe, Mykolaiv obl.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
