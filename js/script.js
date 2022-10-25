@@ -7,3 +7,7 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
       },
 })
+
+
+var audio=document.querySelector("audio");
+audio.volume = 0.1;
