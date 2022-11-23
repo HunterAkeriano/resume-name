@@ -126,64 +126,9 @@ body {
   text-align: center;
 }
 
-.reviews {
-  max-width: 1400px;
-  margin: 0 auto;
-  margin-top: 50px;
-  padding: 20px 0px;
-}
-.reviews__text-title {
-  text-align: center;
-  font-weight: 700;
-  font-size: 30px;
-}
-.reviews__text-card {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 50px;
-}
-.reviews__text-card .card1 {
-  margin: 0 auto;
-}
-.reviews__text-card .card2 {
-  margin: 0 auto;
-}
-.reviews__text-card .card3 {
-  width: 100%;
-  margin: 0 auto;
-}
-.reviews__text-card .card {
-  display: flex;
-  width: 45%;
-  background-color: rgb(25, 16, 73);
-  border-radius: 20px;
-  padding: 20px 10px;
-  margin-top: 20px;
-}
-.reviews__text-card .card img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-top: 8%;
-}
-.reviews__text-card .card .card-text {
-  margin-left: 20px;
-}
-.reviews__text-card .card .card-text .card-title,
-.reviews__text-card .card .card-text .card-subtitle {
-  color: white;
-}
-.reviews__text-card .card .card-text .card-subtitle {
-  margin: 10px 0px;
-  font-weight: 100;
-}
-.reviews__text-card .card .card-text .card-info-text {
-  color: white;
-  font-weight: 400;
-  line-height: 25px;
-}
-
 .footer {
+  border-top: 1px solid #ccc;
+  padding-top: 50px;
   max-width: 1400px;
   margin: 20px auto 0;
 }
