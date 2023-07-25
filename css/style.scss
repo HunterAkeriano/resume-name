@@ -40,19 +40,19 @@ body{
         &-img{
             position: absolute;
             height: 150px;
-            width: 120px;
+            width: 220px;
             top: -100px;
             left: 50%;
-            margin-left: -60px;
+            margin-left: -110px;
             border: 6px solid #863e03;
             border-radius: 10%;
             transition: 0.5s;
             cursor: zoom-in;
         }
         &-img:hover{
-            width: 250px;
+            width: 500px;
             height: 400px;
-            margin-left: -125px;
+            margin-left: -250px;
         }
         &-title{
             text-align: center;

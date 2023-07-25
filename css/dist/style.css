@@ -23,7 +23,7 @@ body {
 }
 
 .header {
-  background-color: rgb(6, 6, 102);
+  background-color: #060666;
   position: relative;
   padding-bottom: 20px;
   max-width: 1400px;
@@ -61,7 +61,7 @@ body {
   color: white;
 }
 .header__info-subtitle span {
-  color: rgb(9, 192, 85);
+  color: #09c055;
   font-weight: 700;
 }
 
@@ -250,4 +250,4 @@ body {
 .btn:hover,
 .btn-span:hover {
   opacity: 1;
-}/*# sourceMappingURL=style.css.map */
+}
